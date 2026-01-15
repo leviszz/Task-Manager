@@ -1,16 +1,64 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📝 Task Manager – Fullstack Application
 
-Currently, two official plugins are available:
+Aplicação fullstack de gerenciamento de tarefas com autenticação de usuários.  
+Cada usuário pode criar, visualizar, concluir e excluir **apenas as suas próprias tarefas**, com segurança garantida no backend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido com foco em **aprendizado real de frontend + backend** e integração com o banco de dados.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- Cadastro de usuário (email e senha)
+- Login e logout
+- Criar tarefas
+- Listar tarefas do usuário autenticado
+- Marcar tarefa como concluída / pendente
+- Excluir tarefas
+- Proteção de dados por usuário (RLS)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Tecnologias utilizadas
+
+### Frontend
+- **React**
+- **Vite**
+- **JavaScript**
+- **CSS puro**
+  - Flexbox
+  
+
+### Backend
+  - Supabase
+  - Authentication (email/senha)
+  - PostgreSQL
+  - Row Level Security (RLS)
+  - Policies para SELECT, INSERT, UPDATE e DELETE
+
+---
+
+## 🏗️ Arquitetura e conceitos aplicados
+
+- Aplicação **fullstack**
+- Autenticação baseada em sessão
+- Segurança no nível do banco de dados
+- UI reagindo ao estado de autenticação
+
+---
+
+## 🔐 Segurança
+
+A aplicação utiliza Row Level Security (RLS) no PostgreSQL, garantindo que:
+
+- Cada usuário só possa:
+  - Ver suas próprias tarefas
+  - Criar tarefas para si
+  - Atualizar suas tarefas
+  - Excluir suas tarefas
+- Mesmo que alguém tente manipular requisições no frontend, o banco bloqueia acessos indevidos.
+
+
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
