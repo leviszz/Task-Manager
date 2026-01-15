@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.saudacao {
+  margin-bottom: 20px;
+  gap: 30px;
+}
