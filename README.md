@@ -6,6 +6,7 @@ Cada usuário pode criar, visualizar, concluir e excluir **apenas as suas própr
 
 Este projeto foi desenvolvido com foco em **aprendizado real de frontend + backend** e integração com o banco de dados.
 
+OBS: Backend desativado devido a não utilização constante do sistema.
 ---
 
 ## 🚀 Funcionalidades
